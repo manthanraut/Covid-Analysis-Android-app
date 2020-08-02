@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coronavirus (COVID-19) App"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:fontFamily="serif-monospace"
+            android:padding="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    <LinearLayout
+        android:id="@+id/prevention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/horizontalScrollView">
+
+            <LinearLayout
+                android:id="@+id/items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cough" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spray"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/washyourhands"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/doctor"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/stayhome"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/socialdistancing"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/antibacterialgel"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/facemask"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/stayhome"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="GET STARTED"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/todashboard"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/white"
+        android:onClick="submitdashboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/roundcorn" />
+</RelativeLayout>

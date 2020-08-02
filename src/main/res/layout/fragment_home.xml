@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGray1"
+    tools:context=".HomeFragment"
+    android:padding="5dp">
+
+   <ProgressBar
+       android:id="@+id/progressBar"
+       android:layout_width="30dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rect"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/shape_circle2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:text="Total Cases"
+
+            />
+        <TextView
+            android:id="@+id/totalCasesTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="textEnd"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rect"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/shape_circle2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:text="New Cases"/>
+        <TextView
+            android:id="@+id/newCasesTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="textEnd"
+            android:gravity="end" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rect"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/shape_circle1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:text="Total Deaths"/>
+        <TextView
+            android:id="@+id/totalDeathsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="textEnd"
+            android:gravity="end" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rect"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/shape_circle1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:text="New Deaths"/>
+        <TextView
+            android:id="@+id/newDeathsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="textEnd"
+            android:gravity="end" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rect"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/shape_circle3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:text="Total Recovered"/>
+        <TextView
+            android:id="@+id/totalRecoveredTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="textEnd"
+            android:gravity="end" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rect"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/shape_circle3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:text="New Recovered"/>
+        <TextView
+            android:id="@+id/newRecoveredTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="textEnd"
+            android:gravity="end" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>
