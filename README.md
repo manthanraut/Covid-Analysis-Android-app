@@ -1,3 +1,3 @@
 # Covid-Analysis-Android-app
 An Android application for COVID-19 data analysis
-![](imag1.jpeg =100x20)
+<img src="imag.jpeg" alt="Frame1" width="200" height="200"/>
